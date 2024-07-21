@@ -1,40 +1,25 @@
-# 1 write a program to find area of a circle
-# 2 write  a program to find perimeter of circle
-# 3 write a program to find area of a triangle
-# 4 write a program to find perimeter of a triangle
-# finding a prime number using sqrt method
+#find the  element that is  present in k+N index
+#k=3
+#N=2
+# i/p 3 6 8 4 61 2   
+#o/p is 2
+# -----------
+# k=3
+# N=4
+# 80 70 54 36 72
+
+'''n=[3,6,8,4,61,2]
+k=3
+N=2
+for i in range(0,len(n)):
+     if(i==k+N):
+          print(n[i])'''
 
 
-radius=4
-pi=22/7
-area=pi*radius*radius
-print("area of circle :",area)
-
-
-radius=4
-pi=22/7
-perimeter=2*pi*radius
-print("perimw=eter of circle:",perimeter)
-
-
-b=3
-h=5
-area=0.5*b*h
-print("area of triangle:",area)
-
-
-b=3
-h=4
-l=5
-perimeter=l*h*b
-print("perimeter of triangle:",perimeter)
-
-N=[10,20,30]
-a=0
-for i in range(0,N[0],3):
-    a+=1
-for i in range(0,N[1],3):
-    a+=1
-for i in range(0,N[2],3):
-    a+=1
-print(a)
+n=[80,70,54,36,72]
+k=3
+N=4    
+for i in range(0,len(n)):
+    if(i>(N+k)):
+        print("error")
+print("error")
