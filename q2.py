@@ -1,18 +1,13 @@
-mr_x="badminton"
-mr_y="tabletennis"
-mr_z="swimming"
-selected=mr_z
-heightx=int(input("enter height of x:"))
-weightx=int(input("enter weight of x:"))
-bodyx=int(input("enter bodyfat:"))
-zmedals=(50/100)*14
-heighty=int(input("enter height of y:"))
-weighty=int(input("enter weight of y:"))
-bodyy=int(input("enter bodyfat:"))
-if(heightx>=140) and (weightx<=148) and (bodyx<12):
-    if(heighty>=118 or heighty<=148) and weighty%zmedals==0 and bodyy==14:
-        print("all went in same plane")
-    else:
-        print("only x,z went in same plane")
-else:
-    print("only z went in plane")
+# peak element
+'''a=list(map(int,input().split()))
+count=0
+for i in range(1,len(a)-1):
+    if(a[i-1]<a[i] and a[i]>a[i+1]):
+        count=i 
+        break
+print(a[count]) '''
+
+a=list(map(int,input().split()))
+for i in range(1,len(a)-1):               #more than one peak element also there
+    if a[i-1]<a[i] and a[i]>a[i+1]:
+        print(a[i])    #print(a[i],end=" ")

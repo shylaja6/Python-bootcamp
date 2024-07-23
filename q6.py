@@ -1,9 +1,16 @@
-#take a space separated input from a user and print alternate elements
+# leap year or not
+'''year=int(input()) 
+count=0
+if year%400==0: 
+    count+=1
+print("leap year")'''
 
-# n=int(input())
-# for i in range(1,n+1,2):
-#     print(i)   
 
-my_list=list(map(int,input().split()))  #alternate values of list
-for i in range(0,len(my_list),2):
-    print(my_list[i])
+#no of leap year in given range
+
+
+for i in range(2000,2024):
+    if i%400==0 or i%4==0 or i%100==0:
+        print(i)    
+
+
