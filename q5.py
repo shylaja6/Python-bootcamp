@@ -1,10 +1,13 @@
-# write a program to print all the prime numbers in a given range
+# i/p=hello 123    o/p=6
+s="hello 123"
+sum=0
+check="0123456789"
+inp=s.lower()
+for i in inp:
+    if (i in check):
+        sum+=int(i)
+print(sum)
 
-a=int(input())
-b=int(input())
-for i in range(a,b+1):
-    for j in range(2,i):
-        if i%j==0:
-            break
-    else:
-        print(i)
+
+
+        
